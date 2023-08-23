@@ -39,6 +39,13 @@ data:
     - repos:
       - <github org>
       trigger_github_workflows: true
+    lgtm:
+    - repos:
+      - yihong/presto
+      review_acts_as_lgtm: true
+    owners:
+      skip_collaborators:
+      - yhwang/presto
 # ---
 # apiVersion: v1
 # kind: Secret
