@@ -48,3 +48,8 @@ __Note__: Currently, the deployment files under [kustomized](./kustomize/) folde
    ```bash
    kubectl apply -k kustomize
    ```
+
+### Other Information
+- [Kubernetes code review process](https://github.com/kubernetes/community/blob/master/contributors/guide/owners.md#the-code-review-process)
+- [GitHub API package for JavaScript](https://github.com/octokit/octokit.js)
+- [GitHub API for Workflow](https://docs.github.com/en/rest/actions/workflow-run)
