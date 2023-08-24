@@ -145,8 +145,19 @@ data:
         - <github org>
         merge_method:
           <github org>: squash
-
+      context_options:
+        from-branch-protection: true
+        skip-unknown-contexts: true
+        orgs:
+          yhwang:
+            repos:
+              presto:
+                required-contexts:
+                - web-ui-checks
+                - maven-checks
     decorate_all_jobs: true
+    branch-protection:
+      protection: true
     periodics:
     - interval: 1m
       agent: kubernetes
@@ -157,7 +168,7 @@ data:
           command: ["/bin/date"]
     presubmits:
       <github org>/<github repo>:
-      - name: maven-checks
+      - name: maven_checks
         always_run: false
         skip_report: true
         decorate: true
